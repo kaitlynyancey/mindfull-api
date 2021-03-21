@@ -69,5 +69,38 @@ usersRouter
     .get((req, res, next) => {
         res.json(serializeUser(res.user))
     })
+    .delete((req, res, next) => {
+        UsersService.deleteUser(
+            req.app.get('db'),
+            req.params.id
+        )
+            .then(() => {
+                res.status(204).end()
+            })
+            .catch(next)
+    })
+    .patch(jsonParser, (req, res, next) => {
+        const { username, pw } = req.body
+        const userToUpdate = { username, pw }
+
+        const numberOfValues = Object.values(userToUpdate).filter(Boolean).length
+        if (numberOfValues === 0) {
+            return res.status(400).json({
+                error: {
+                    message: `Request body must contain at least one updated field`
+                }
+            })
+        }
+
+        UsersService.updateUser(
+            req.app.get('db'),
+            req.params.id,
+            userToUpdate
+        )
+            .then(numRowsAffected => {
+                res.status(204).end()
+            })
+            .catch(next)
+    })
 
 module.exports = usersRouter
