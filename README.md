@@ -6,7 +6,7 @@ Start to gain control of your mind and de-stress with mindFULL: a virtual mindfu
 Users will have a guided journal entry to fill out each day, which will include mood and stress level trackers, a gratitude section, and a free form for any other daily notes. The entries are saved to the user's journal log (if an account is made), which the user can access anytime. Progress trackers will show how a user is doing on their stress levels and overall moods on their journal page. 
 
 ### Link to mindFULL Live App: [https://mindfull-app.vercel.app/](https://mindfull-app.vercel.app/)
-### Link to mindFULL API Repository: [https://github.com/kaitlynyancey/mindfull-api](https://github.com/kaitlynyancey/mindfull-api)
+### Link to mindFULL App Repository: [https://github.com/kaitlynyancey/mindfull-app](https://github.com/kaitlynyancey/mindfull-app)
 - Documentation of the API endpoints can be found in the README file in the mindFULL API repository. 
 ___
 ## Screenshots:
