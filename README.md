@@ -84,14 +84,14 @@ Example of 'updatedEntry' object:
 
 ```
 const updatedEntry = {
-            date_created: '1/2/21' (required),
-            month_created: 'January' (required),
-            mood: 'Excited' (required),
-            stress_level: 3 (required),
-            gratitude1: 'Example 1' (required),
-            gratitude2: 'Example 2' (required), 
-            gratitude3: 'Example 3' (required),
-            notes: 'Updated notes' (required),
+            date_created: '1/2/21',
+            month_created: 'January',
+            mood: 'Excited',
+            stress_level: 3,
+            gratitude1: 'Example 1',
+            gratitude2: 'Example 2', 
+            gratitude3: 'Example 3',
+            notes: 'Updated notes',
             userid: 1 (required),
             }
 ```
