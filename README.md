@@ -1,4 +1,4 @@
-# mindFULL App
+# mindFULL API
 
 ### Description: 
 Start to gain control of your mind and de-stress with mindFULL: a virtual mindfulness journal. Now you don't have to worry about carrying a notebook around with you everywhere you go. With mindFULL, you will always have access to your journal entries on mobile or desktop. 
