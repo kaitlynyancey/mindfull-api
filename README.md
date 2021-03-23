@@ -1,26 +1,97 @@
-# Express Boilerplate!
+# mindFULL API
 
-This is a boilerplate project used for starting new projects!
+## Endpoints
 
-## Set up
+### Get
+To display all journal entries in the entries database:
 
-Complete the following steps to start a new project (NEW-PROJECT-NAME):
+```
+fetch('https://stormy-taiga-88340.herokuapp.com/api/entries', {
+      method: 'GET',
+      headers: {
+        'content-type': 'application/json',
+        'Authorization': 'Bearer REACT_APP_API_KEY'
+      }})
+```
 
-1. Clone this repository to your local machine `git clone BOILERPLATE-URL NEW-PROJECTS-NAME`
-2. `cd` into the cloned repository
-3. Make a fresh start of the git history for this project with `rm -rf .git && git init`
-4. Install the node dependencies `npm install`
-5. Move the example Environment file to `.env` that will be ignored by git and read by the express server `mv example.env .env`
-6. Edit the contents of the `package.json` to use NEW-PROJECT-NAME instead of `"name": "express-boilerplate",`
+### Get by Entry ID
+To display a specific journal entry from the entries database:
 
-## Scripts
+```
+fetch('https://stormy-taiga-88340.herokuapp.com/api/entries/${YourEntryId}', {
+      method: 'GET',
+      headers: {
+        'content-type': 'application/json',
+        'Authorization': 'Bearer REACT_APP_API_KEY'
+      }})
+```
 
-Start the application `npm start`
+### Post
+To save a new journal entry to the entries database:
 
-Start nodemon for the application `npm run dev`
+```
+fetch('https://stormy-taiga-88340.herokuapp.com/api/entries', {
+      method: 'POST',
+      body: JSON.stringify(newEntry),
+      headers: {
+        'content-type': 'application/json',
+        'Authorization': 'Bearer REACT_APP_API_KEY'
+      }})
+```
 
-Run the tests `npm test`
+Example of 'newEntry' object:
 
-## Deploying
+```
+const newEntry = {
+            date_created: '1/1/21' (required),
+            month_created: 'January' (required),
+            mood: 'Happy' (required),
+            stress_level: 5 (required),
+            gratitude1: 'Example 1' (required),
+            gratitude2: 'Example 2' (required), 
+            gratitude3: 'Example 3' (required),
+            notes: 'Example notes' (required),
+            userid: 1 (required),
+            }
+```
 
-When your new project is ready for deployment, add a new Heroku application with `heroku create`. This will make a new git remote called "heroku" and you can then `npm run deploy` which will push to this remote's main branch.
+### Delete
+To delete an existing journal entry from the entries database:
+
+```
+fetch('https://stormy-taiga-88340.herokuapp.com/api/entries/${YourEntryId}', {
+        method: 'DELETE',
+        headers: {
+            'content-type': 'application/json',
+            'Authorization': 'Bearer REACT_APP_API_KEY'
+        }})
+```
+
+### Patch
+To update an exisiting journal entry in the entries database:
+
+```
+fetch('https://stormy-taiga-88340.herokuapp.com/api/entries/${YourEntryId}', {
+      method: 'PATCH',
+      body: JSON.stringify(updatedEntry),
+      headers: {
+        'content-type': 'application/json',
+        'Authorization': 'Bearer REACT_APP_API_KEY'
+      }})
+```
+
+Example of 'updatedEntry' object:
+
+```
+const updatedEntry = {
+            date_created: '1/2/21' (required),
+            month_created: 'January' (required),
+            mood: 'Excited' (required),
+            stress_level: 3 (required),
+            gratitude1: 'Example 1' (required),
+            gratitude2: 'Example 2' (required), 
+            gratitude3: 'Example 3' (required),
+            notes: 'Updated notes' (required),
+            userid: 1 (required),
+            }
+```
