@@ -7,9 +7,9 @@ Users will have a guided journal entry to fill out each day, which will include 
 
 ### Link to mindFULL Live App: [https://mindfull-app.vercel.app/](https://mindfull-app.vercel.app/)
 ### Link to mindFULL App Repository: [https://github.com/kaitlynyancey/mindfull-app](https://github.com/kaitlynyancey/mindfull-app)
-- Documentation of the API endpoints can be found in the README file in the mindFULL API repository. 
+
 ___
-## Screenshots:
+## App Screenshots:
 
 ### Home Page
 
