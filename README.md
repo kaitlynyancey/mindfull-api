@@ -113,3 +113,39 @@ const updatedEntry = {
             userid: 1 (required),
             }
 ```
+___
+
+## Screenshots:
+
+### Home Page
+
+This is the landing page of the app. From here you can access your daily entry or your journal log. Also, on any page of the app, you can use the navigation links to visit the home page, about section, entry page, or journal log. You can also login or logout with the links in the top right corner of the page 
+
+![screenshot of app home page](mindfull-screenshots/home-page.png)
+___
+### Entry Page
+
+This is the daily entry form. You will be prompted to enter your current mood, stress level, three daily gratitudes, and any notes or thoughts you want to record
+
+![screenshot of app journal entry page](mindfull-screenshots/entry-form.png)
+___
+### Journal Log
+
+The completed entries will be available to access in the journal log. You can keep track of your progress with the stress level and mood trackers
+
+![screenshot of app journal trackers](mindfull-screenshots/trackers.png)
+
+![screenshot of app journal log page](mindfull-screenshots/journal-log.png)
+___
+### Login Page
+
+You can create a new account or login to your current account in the login page
+
+![screenshot of app login page](mindfull-screenshots/login-page.png)
+___
+### About Page
+
+For more information on mindfulness, you can visit the about page
+
+![screenshot of app about page](mindfull-screenshots/about-page.png)
+___
